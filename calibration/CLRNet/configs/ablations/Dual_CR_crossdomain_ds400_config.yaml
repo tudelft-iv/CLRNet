@@ -1,0 +1,29 @@
+# Cross-domain evaluation: a VoD-trained CRNet run on Dual-Radar (CLR_MODE=CRDual). Radar down-sampled to 400 points.
+checkpoints: '/home/appuser/data/checkpoints/DualRadar'
+data_folder: '/home/appuser/data/DualRadar'
+epochs: 100
+BASE_LEARNING_RATE: 0.0001
+batch_size: 1
+spherical_projection: true
+use_reflectance_RADAR: true
+use_velocity_RADAR: true
+use_time_RADAR: true
+multiple_input: 1
+use_depth: true
+radar_5frames: false
+input_size: [512, 1024]
+max_t: 1.0                    # +-100 cm
+max_r: 20.0                   # +-20 deg
+num_worker: 6
+resume: true
+weights: null
+rescale_rot: 1.0
+rescale_transl: 2.0
+norm: 'bn'
+dropout: 0.0
+max_depth: 80.0
+weight_point_cloud: 0.5
+starting_epoch: 0
+eval_overrides:               # applied over the checkpoint settings
+  use_depth_input: false      # the cross-domain runs feed the depth branch zeros
+downsample_points: 400

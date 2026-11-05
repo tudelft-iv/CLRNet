@@ -1,0 +1,15 @@
+CLRNet -- Targetless Extrinsic Calibration for Camera, Lidar and 4D Radar Using Deep Learning
+Copyright (c) 2024-2026 HUN-REN Institute for Computer Science and Control (SZTAKI)
+and Delft University of Technology
+Authors: Marcell Kégl, Andras Palffy, Csaba Benedek, Dariu M. Gavrila
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+International License (CC BY-NC-SA 4.0); the full licence text is in LICENSE.
+
+Parts of this code are adapted from PWC-Net (NVIDIA, CC BY-NC-SA 4.0), CMRNet (D. Cattaneo,
+CC BY-NC-SA 4.0) and LCCNet (X. Lv et al.), which is itself based on CMRNet; the ShareAlike terms
+of those licences apply to this work. Third-party components with their own licences:
+
+  calibration/CLRNet/models/correlation_package/   Apache License 2.0 (NVIDIA), see its LICENSE file
+  calibration/CLRNet/Depth-Anything-V2/            git submodule, Apache License 2.0
+  Depth-Anything-V2-Large weights (downloaded)     CC BY-NC 4.0

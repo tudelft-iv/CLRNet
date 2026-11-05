@@ -1,0 +1,3 @@
+[submodule "calibration/CLRNet/Depth-Anything-V2"]
+	path = calibration/CLRNet/Depth-Anything-V2
+	url = https://github.com/DepthAnything/Depth-Anything-V2

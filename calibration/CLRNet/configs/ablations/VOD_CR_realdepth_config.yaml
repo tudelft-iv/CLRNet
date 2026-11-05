@@ -1,0 +1,25 @@
+checkpoints: '/home/appuser/data/checkpoints/VOD_CR_realdepth'
+data_folder: '/home/appuser/data/KITTI_Second_TIER_05_29/uvod'
+epochs: 100
+BASE_LEARNING_RATE: 0.0001
+batch_size: 8
+spherical_projection: true
+use_reflectance_RADAR: true
+use_velocity_RADAR: true
+use_time_RADAR: true
+multiple_input: 1
+use_depth: true
+use_depth_input: true
+input_size: [512, 1024]
+max_t: 0.2                    # +-20 cm
+max_r: 1.0                    # +-1 deg
+num_worker: 6
+resume: false
+weights: null
+rescale_rot: 1.0
+rescale_transl: 2.0
+norm: 'bn'
+dropout: 0.0
+max_depth: 80.0
+weight_point_cloud: 0.5
+starting_epoch: 0
